@@ -5,7 +5,7 @@ import com.edo.api.repository.UserRepository
 import org.springframework.stereotype.Service
 
 @Service
-class UserServiceImpl(private val userRepository: UserRepository):UserService {
+class UserServiceImpl(private val userRepository: UserRepository): UserService() {
 
 
 

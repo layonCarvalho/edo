@@ -15,3 +15,7 @@ class UserController(private val userService: UserService) {
         userService.createUser(username, password)
     }
 }
+
+private fun UserService.createUser(username: String, password: String) {
+    TODO("Not yet implemented")
+}
