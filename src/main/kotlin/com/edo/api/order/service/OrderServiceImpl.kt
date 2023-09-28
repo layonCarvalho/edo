@@ -1,9 +1,8 @@
-package com.edo.api.service
-
-import com.edo.api.entities.user.Order
-import com.edo.api.entities.user.OrderItem
-import com.edo.api.entities.user.OrderResult
-import com.edo.api.repository.OrderRepository
+package com.edo.api.order.service
+/*
+import com.edo.api.order.entities.Order
+import com.edo.api.order.controller.OrderResult
+import com.edo.api.order.repository.OrderRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import java.util.*
@@ -11,9 +10,8 @@ import com.edo.api.service.ProductService // Importe a interface ProductService
 
 @Service
 class OrderServiceImpl(
-        private val orderRepository: OrderRepository,
-        private val productService: ProductService
-) : OrderService {
+    private val orderRepository: OrderRepository,
+    private val productService: ProductService) : OrderService {
 
     @Transactional
     override fun placeOrder(order: Order): OrderResult {
@@ -48,3 +46,7 @@ class OrderServiceImpl(
         return orderResult
     }
 }
+
+
+
+ */

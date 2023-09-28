@@ -1,4 +1,4 @@
-package com.edo.api.entities.user
+package com.edo.api.order.entities
 
 import javax.persistence.*
 

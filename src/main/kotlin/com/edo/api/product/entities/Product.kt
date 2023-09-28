@@ -1,4 +1,4 @@
-package com.edo.api.entities.user
+package com.edo.api.product.entities
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

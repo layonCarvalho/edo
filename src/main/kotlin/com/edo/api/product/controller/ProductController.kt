@@ -1,8 +1,7 @@
-package com.edo.api.controller.user
+package com.edo.api.product.controller
 
-import com.edo.api.entities.user.Product
+import com.edo.api.product.entities.Product
 import com.edo.api.service.ProductService
-import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 

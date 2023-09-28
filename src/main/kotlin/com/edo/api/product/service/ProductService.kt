@@ -1,6 +1,6 @@
 package com.edo.api.service
 
-import com.edo.api.entities.user.Product
+import com.edo.api.product.entities.Product
 import java.util.*
 
 interface ProductService {
@@ -17,8 +17,7 @@ interface ProductService {
     //fun getProductById(id: Long): Optional<Product>
 
     fun updateProduct(product: Product): Product
-
-
+    fun getProductById(productId: Long): Any
 
 
 }

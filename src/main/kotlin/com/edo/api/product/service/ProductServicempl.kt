@@ -1,7 +1,8 @@
-package com.edo.api.service
+package com.edo.api.product.service
 
-import com.edo.api.entities.user.Product
+import com.edo.api.product.entities.Product
 import com.edo.api.repository.ProductRepository
+import com.edo.api.service.ProductService
 import org.springframework.stereotype.Service
 import java.util.*
 
@@ -45,6 +46,10 @@ class ProductServiceImpl(private val repository: ProductRepository) : ProductSer
 
     override fun updateProduct(product: Product): Product {
         return repository.save(product)
+    }
+
+    override fun getProductById(productId: Long): Any {
+        TODO("Not yet implemented")
     }
 
 
