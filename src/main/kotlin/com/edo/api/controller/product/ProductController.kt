@@ -2,9 +2,7 @@
 package com.edo.api.controller.product
 
 import com.edo.api.product.entities.Product
-
 import com.edo.api.product.service.ProductService
-
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
