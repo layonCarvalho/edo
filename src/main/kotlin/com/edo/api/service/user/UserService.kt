@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service
 interface UserService {
     fun createUser(username: String, password: String)
 
-    fun getUserByUsername(username: String): User?
+    fun getUserByUsername(username: String): List<User>
 }

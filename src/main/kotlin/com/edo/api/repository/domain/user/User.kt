@@ -16,7 +16,7 @@ open class User (
     @Column(name = "username")
     open val username: String? = null,
 
-    @Column(name = "//TODO - EVOLUIR ENUM")
+    @Column(name = "password")
     open val password: String? = null
 )
 

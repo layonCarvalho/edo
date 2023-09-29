@@ -13,13 +13,14 @@ class UserController(private val userService: UserService) {
 
     @PostMapping("/create")
     //@ApiOperation("Find all domain's ", response = HttpStatus::class)
-    fun createUser(@RequestParam username: String, @RequestParam password: String): ResponseEntity<String> {
+    //TODO - MUDAR PARA @RequestBody
+    fun createUser(@RequestHeader username: String, @RequestHeader password: String): ResponseEntity<String> {
         userService.createUser(username, password)
         return ResponseEntity.status(HttpStatus.CREATED).body("User created successfully")
     }
 
-    @GetMapping("/{username}")
-    fun getUserByUsername(@PathVariable username: String): ResponseEntity<User> {
+    @GetMapping("/find")
+    fun getUserByUsername(@RequestHeader username: String): ResponseEntity<List<User>> {
         val user = userService.getUserByUsername(username)
         return ResponseEntity.ok(user)
     }
