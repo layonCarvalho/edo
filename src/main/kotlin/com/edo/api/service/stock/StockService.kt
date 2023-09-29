@@ -1,7 +1,7 @@
 package com.edo.api.stock.service
 
 
-import com.edo.api.entities.stock.Stock
+import com.edo.api.repository.domain.stock.Stock
 import java.util.*
 
 

@@ -1,6 +1,6 @@
 package com.edo.api.stock.controller
 
-import com.edo.api.entities.stock.Stock
+import com.edo.api.repository.domain.stock.Stock
 import com.edo.api.stock.service.StockService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

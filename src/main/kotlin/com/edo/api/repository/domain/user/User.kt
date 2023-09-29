@@ -1,4 +1,4 @@
-package com.edo.api.entities.user
+package com.edo.api.repository.domain.user
 
 
 import javax.persistence.*

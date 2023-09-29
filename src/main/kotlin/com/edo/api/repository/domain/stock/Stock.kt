@@ -1,4 +1,4 @@
-package com.edo.api.entities.stock
+package com.edo.api.repository.domain.stock
 
 
 

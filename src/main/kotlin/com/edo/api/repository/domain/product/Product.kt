@@ -1,4 +1,4 @@
-package com.edo.api.entities.product
+package com.edo.api.repository.domain.product
 
 
 

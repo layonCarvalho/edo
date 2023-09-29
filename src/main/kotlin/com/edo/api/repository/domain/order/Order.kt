@@ -1,4 +1,4 @@
-package com.edo.api.entities.order
+package com.edo.api.repository.domain.order
 
 
 

@@ -1,6 +1,6 @@
 package com.edo.api.service.product
 
-import com.edo.api.entities.product.Product
+import com.edo.api.repository.domain.product.Product
 import java.util.*
 
 interface ProductService {

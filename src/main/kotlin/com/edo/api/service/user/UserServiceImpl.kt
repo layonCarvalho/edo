@@ -1,7 +1,7 @@
 package com.edo.api.service.user
 
-import com.edo.api.repository.user.UserRepository
-import com.edo.api.entities.user.User
+import com.edo.api.repository.repository.user.UserRepository
+import com.edo.api.repository.domain.user.User
 import org.springframework.stereotype.Service
 
 @Service

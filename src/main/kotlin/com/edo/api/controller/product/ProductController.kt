@@ -1,7 +1,7 @@
 
 package com.edo.api.controller.product
 
-import com.edo.api.entities.product.Product
+import com.edo.api.repository.domain.product.Product
 import com.edo.api.service.product.ProductService
 
 import org.springframework.http.ResponseEntity

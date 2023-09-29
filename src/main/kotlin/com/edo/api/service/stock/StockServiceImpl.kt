@@ -1,7 +1,7 @@
 package com.edo.api.stock.service
 
-import com.edo.api.entities.stock.Stock
-import com.edo.api.repository.stock.StockRepository
+import com.edo.api.repository.domain.stock.Stock
+import com.edo.api.repository.repository.stock.StockRepository
 import org.springframework.stereotype.Service
 import java.util.*
 

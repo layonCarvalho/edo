@@ -1,6 +1,6 @@
 package com.edo.api.controller.user
 
-import com.edo.api.entities.user.User
+import com.edo.api.repository.domain.user.User
 import com.edo.api.service.user.UserService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

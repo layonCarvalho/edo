@@ -1,5 +1,5 @@
-package com.edo.api.config
-/*
+/*package com.edo.api.config
+
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.servlet.config.annotation.*
@@ -45,5 +45,7 @@ open class SwaggerConfig : WebMvcConfigurationSupport() {
             .addResourceLocations("classpath:/META-INF/resources/")
     }
 }
+
+
 
  */

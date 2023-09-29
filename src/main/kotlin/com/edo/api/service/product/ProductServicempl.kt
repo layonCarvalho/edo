@@ -1,7 +1,7 @@
 package com.edo.api.service.product
 
-import com.edo.api.entities.product.Product
-import com.edo.api.repository.product.ProductRepository
+import com.edo.api.repository.domain.product.Product
+import com.edo.api.repository.repository.product.ProductRepository
 import org.springframework.stereotype.Service
 import java.util.*
 
