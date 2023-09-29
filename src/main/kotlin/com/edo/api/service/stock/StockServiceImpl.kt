@@ -1,9 +1,8 @@
 package com.edo.api.stock.service
 
-import com.edo.api.stock.entities.Stock
-import com.edo.api.stock.repository.StockRepository
+import com.edo.api.entities.stock.Stock
+import com.edo.api.repository.stock.StockRepository
 import org.springframework.stereotype.Service
-import java.lang.RuntimeException
 import java.util.*
 
 @Service
@@ -21,6 +20,7 @@ class StockServiceImpl(private val repository: StockRepository) : StockService {
     }
 
     override fun update(id: Long, stock: Stock): Optional<Stock> {
+        /*
         val optional = getbyId(id)
         if (optional.isPresent) Optional.empty<Stock>()
 
@@ -33,6 +33,10 @@ class StockServiceImpl(private val repository: StockRepository) : StockService {
 
             repository.save(stockToUpdate)
         }
+
+         */
+
+        return Optional.ofNullable(null)
 
     }
 

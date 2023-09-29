@@ -1,21 +1,18 @@
-package com.edo.api.order.entities
+package com.edo.api.entities.order
+
+
 
 import javax.persistence.*
 
-@Entity(name = "orders")
-data class Order(
-        @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val id: Long? = null,
 
-        @OneToMany(cascade = [CascadeType.ALL], orphanRemoval = true)
-        @JoinColumn(name = "order_id")
-        val orderItems: MutableList<OrderItem> = mutableListOf()
+@Entity
+@Table(schema = "public", name = "tb_order")
+open class Order (
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        @Column(name = "id_order", nullable = false)
+        open var id: Long? = null
 )
 
-@Entity(name = "order_items")
-data class OrderItem(
-        @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val id: Long? = null,
-        val productId: Long,
-        val quantity: Int
-)
+

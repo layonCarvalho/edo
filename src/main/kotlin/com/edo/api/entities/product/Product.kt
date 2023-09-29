@@ -1,17 +1,28 @@
-package com.edo.api.product.entities
+package com.edo.api.entities.product
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
 
-@Entity(name = "product")
-data class Product(
-        @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long? = null,
-        var name: String = "",
-        var description: String = "",
-        var price: Double = 0.0,
-        var quantityAvailable: Int
 
+import javax.persistence.*
+
+
+@Entity
+@Table(schema = "public", name = "tb_produto")
+open class Product (
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        @Column(name = "id_produto", nullable = false)
+        open var id: Long? = null,
+
+        @Column(name = "name")
+        var name: String? = null,
+
+        @Column(name = "description")
+        var description: String? = null,
+
+        @Column(name = "price")
+        var price: Double? = null,
+
+        @Column(name = "quantityAvailable")
+        var quantityAvailable: Int? = null
 )

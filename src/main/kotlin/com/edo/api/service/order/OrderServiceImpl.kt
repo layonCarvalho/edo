@@ -1,5 +1,5 @@
-package com.edo.api.order.service
-<<<<<<< HEAD:src/main/kotlin/com/edo/api/order/service/OrderServiceImpl.kt
+package com.edo.api.service.order
+
 /*
 import com.edo.api.order.entities.Order
 import com.edo.api.order.controller.OrderResult
@@ -9,7 +9,7 @@ import com.edo.api.order.repository.OrderRepository
 import com.edo.api.entities.user.Order
 import com.edo.api.controller.controller.order.OrderController
 import com.edo.api.order.repository.OrderRepository
-import com.edo.api.product.service.ProductService
+import com.edo.api.service.product.ProductService
 >>>>>>> 03033b46db96af684443b670fe0642a82eb2f5fe:src/main/kotlin/com/edo/api/service/order/OrderServiceImpl.kt
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional

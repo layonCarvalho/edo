@@ -1,21 +1,13 @@
+package com.edo.api.repository.user
 
-package com.edo.api.service
-
-import com.edo.api.entites.user.User
-import com.edo.api.repository.UserRepository
-import org.springframework.stereotype.Service
-
-@Service
-class UserServiceImpl(private val userRepository: UserRepository):UserService {
+import com.edo.api.entities.user.User
+import org.springframework.data.jpa.repository.JpaRepository
 
 
+interface UserRepository : JpaRepository<User, Long>{
 
-    override fun createUser(username: String, password: String) {
-        val user = User(username = username, password = password)
-        userRepository.save(user)
-    }
+    fun findByUsername(name: String): User
 
-    override fun getUserByUsername(username: String): User {
-        return userRepository.findByUsername(username)!!
-    }
 }
+
+

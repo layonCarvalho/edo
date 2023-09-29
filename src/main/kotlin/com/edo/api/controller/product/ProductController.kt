@@ -1,14 +1,9 @@
-<<<<<<< HEAD:src/main/kotlin/com/edo/api/product/controller/ProductController.kt
-package com.edo.api.product.controller
 
-import com.edo.api.product.entities.Product
-import com.edo.api.service.ProductService
-=======
-package com.edo.api.controller.controller.product
+package com.edo.api.controller.product
 
-import com.edo.api.product.entities.Product
-import com.edo.api.product.service.ProductService
->>>>>>> 03033b46db96af684443b670fe0642a82eb2f5fe:src/main/kotlin/com/edo/api/controller/product/ProductController.kt
+import com.edo.api.entities.product.Product
+import com.edo.api.service.product.ProductService
+
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 

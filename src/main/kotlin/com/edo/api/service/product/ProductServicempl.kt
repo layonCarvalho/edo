@@ -1,12 +1,7 @@
-package com.edo.api.product.service
+package com.edo.api.service.product
 
-import com.edo.api.product.entities.Product
-<<<<<<< HEAD:src/main/kotlin/com/edo/api/product/service/ProductServicempl.kt
-import com.edo.api.repository.ProductRepository
-import com.edo.api.service.ProductService
-=======
-import com.edo.api.product.repository.ProductRepository
->>>>>>> 03033b46db96af684443b670fe0642a82eb2f5fe:src/main/kotlin/com/edo/api/service/product/ProductServicempl.kt
+import com.edo.api.entities.product.Product
+import com.edo.api.repository.product.ProductRepository
 import org.springframework.stereotype.Service
 import java.util.*
 
@@ -25,6 +20,7 @@ class ProductServiceImpl(private val repository: ProductRepository) : ProductSer
     }
 
     override fun update(id: Long, product: Product): Optional<Product> {
+        /*
         val optional = getById(id)
         if (!optional.isPresent) {
             return Optional.empty()
@@ -39,14 +35,18 @@ class ProductServiceImpl(private val repository: ProductRepository) : ProductSer
 
             repository.save(productToUpdate)
         }
+
+         */
+
+        return Optional.ofNullable(null)
     }
 
     override fun delete(id: Long) {
-        repository.findById(id).ifPresent { repository.delete(it) }
+        //repository.findById(id).ifPresent { repository.delete(it) }
     }
 
-    override fun getProductById(id: Long): Optional<Product> {
-        return repository.findById(id)
+    override fun getProductById(id: Long): Product {
+        return repository.findById(id).orElse(null)
     }
 
 
@@ -54,9 +54,6 @@ class ProductServiceImpl(private val repository: ProductRepository) : ProductSer
         return repository.save(product)
     }
 
-    override fun getProductById(productId: Long): Any {
-        TODO("Not yet implemented")
-    }
 
 
 }

@@ -5,7 +5,6 @@ import org.springframework.boot.runApplication
 
 @SpringBootApplication
 class EdoApiApplication
-//comentario
 fun main(args: Array<String>)
 {
 	//comentario
