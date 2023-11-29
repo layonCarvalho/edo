@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*
 class UserController(private val userService: UserService) {
 
     @PostMapping("/create")
-    //@ApiOperation("Find all domain's ", response = HttpStatus::class)
     //TODO - MUDAR PARA @RequestBody
     fun createUser(@RequestHeader username: String, @RequestHeader password: String): ResponseEntity<String> {
         userService.createUser(username, password)

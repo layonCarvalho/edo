@@ -1,4 +1,4 @@
-package com.edo.api.stock.controller
+package com.edo.api.controller.stock
 
 import com.edo.api.repository.domain.stock.Stock
 import com.edo.api.stock.service.StockService
