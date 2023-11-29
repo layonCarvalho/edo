@@ -13,7 +13,7 @@ open class User (
     @Column(name = "id_usuario", nullable = false)
     open var id: Long? = null,
 
-    @Column(name = "username")
+        @Column(name = "username")
     open val username: String? = null,
 
     @Column(name = "password")
