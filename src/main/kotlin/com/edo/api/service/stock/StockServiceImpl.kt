@@ -11,6 +11,12 @@ class StockServiceImpl(private val repository: StockRepository) : StockService {
         return repository.save(stock)
     }
 
+
+
+
+
+
+
     override fun getAll(): List<Stock> {
         return repository.findAll()
     }

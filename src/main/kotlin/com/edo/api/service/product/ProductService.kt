@@ -4,7 +4,7 @@ import com.edo.api.repository.domain.product.Product
 import java.util.*
 
 interface ProductService {
-    fun create(product: Product): Product
+    fun createProduct(name: String, description: String, price: Double, quantityAvailable: Int)
 
     fun getAll(): List<Product>
 
